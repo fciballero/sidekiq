@@ -3,9 +3,9 @@ PATH
   specs:
     sidekiq (0.5.1)
       celluloid (~> 0.17.4)
-      connection_pool
-      multi_json
-      redis
+      connection_pool (~> 1.2)
+      multi_json (~> 1.2)
+      redis (~> 3.3, >= 3.3.5)
 
 GEM
   remote: http://rubygems.org/
@@ -27,15 +27,19 @@ GEM
       timers (>= 4.1.1)
     celluloid-supervision (0.20.6)
       timers (>= 4.1.1)
-    connection_pool (0.1.0)
-    minitest (2.10.0)
-    multi_json (1.0.4)
-    rake (0.9.2.2)
-    redis (2.2.2)
-    simplecov (0.5.4)
-      multi_json (~> 1.0.3)
-      simplecov-html (~> 0.5.3)
-    simplecov-html (0.5.3)
+    connection_pool (1.2.0)
+    docile (1.4.0)
+    json (2.7.1)
+    json (2.7.1-java)
+    minitest (5.22.2)
+    multi_json (1.15.0)
+    rake (10.5.0)
+    redis (3.3.5)
+    simplecov (0.17.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
     timers (4.3.5)
 
 PLATFORMS
@@ -43,10 +47,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  minitest
-  rake
+  minitest (~> 5.3)
+  rake (~> 10.3, >= 10.3.2)
   sidekiq!
-  simplecov
+  simplecov (~> 0.17.1)
 
 BUNDLED WITH
    2.4.22
