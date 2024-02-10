@@ -13,15 +13,15 @@ Gem::Specification.new do |gem|
   gem.name          = "sidekiq"
   gem.require_paths = ["lib"]
   gem.version       = Sidekiq::VERSION
-  gem.add_dependency                  'redis'
-  gem.add_dependency                  'redis-namespace'
+  gem.add_dependency                  'redis', '~> 3.0'
+  gem.add_dependency                  'redis-namespace', '~> 1.2'
   gem.add_dependency                  'connection_pool', '>= 0.9.0'
-  gem.add_dependency                  'celluloid'
-  gem.add_dependency                  'multi_json'
-  gem.add_development_dependency      'minitest'
-  gem.add_development_dependency      'sinatra'
-  gem.add_development_dependency      'slim'
-  gem.add_development_dependency      'rake'
-  gem.add_development_dependency      'actionmailer'
-  gem.add_development_dependency      'activerecord'
+  gem.add_dependency                  'celluloid', '~> 0.9.1'
+  gem.add_dependency                  'multi_json', '~> 1.2'
+  gem.add_development_dependency      'minitest', '~> 2.11', '>= 2.11.4'
+  gem.add_development_dependency      'sinatra', '~> 1.3', '>= 1.3.2'
+  gem.add_development_dependency      'slim', '~> 1.1', '>= 1.1.1'
+  gem.add_development_dependency      'rake', '~> 0.9.2.2'
+  gem.add_development_dependency      'actionmailer', '~> 3.2', '>= 3.2.2'
+  gem.add_development_dependency      'activerecord', '~> 3.1', '>= 3.1.4'
 end
