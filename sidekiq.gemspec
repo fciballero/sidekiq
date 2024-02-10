@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Sidekiq::VERSION
   gem.add_dependency                  'redis', '~> 3.3', '>= 3.3.5'
+  gem.add_dependency                  'timers', '~> 0.0.0'
   gem.add_dependency                  'connection_pool', '~> 1.2'
   gem.add_dependency                  'celluloid', '~> 0.17.4'
   gem.add_dependency                  'multi_json', '~> 1.2'
